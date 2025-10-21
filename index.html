@@ -106,16 +106,22 @@
     .kpi .box{background:#f3f9ff;padding:10px;border-radius:8px;font-size:13px;color:#0b4bd8}
 
     /* CTA */
-    .cta{
-      display:inline-block;
-      background:var(--accent);
-      color:white;
-      padding:10px 14px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:600;
-      margin-top:10px;
-    }
+    .cta {
+	display: inline-block;
+	background: #2563eb; /* calmer blue tone */
+	color: white;
+	padding: 8px 12px; /* smaller height */
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	transition: background 0.2s ease, transform 0.1s ease;
+	}
+
+	.cta:hover {
+		background: #1e40af; /* slightly darker on hover */
+		transform: translateY(-2px);
+	}
 
     footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
     .small{font-size:13px;color:var(--muted)}
@@ -132,8 +138,8 @@
         <p class="muted">Release & QA Process Owner · Healthcare (HL7, EDI, HIPAA) · API & SQL Testing · CI/CD & Security (GitHub Actions)</p>
         <div style="margin-top:10px">
           <a class="cta" href="mailto:ahsanrahim786@gmail.com">Email Me</a>
-          <a class="cta" style="background:#0b6cf0;margin-left:8px" href="https://github.com/ahsanrahim786" target="_blank" rel="noopener">GitHub</a>
-          <a class="cta" style="background:#0b6cf0;margin-left:8px" href="https://www.linkedin.com/in/ahsanrahim786" target="_blank" rel="noopener">LinkedIn</a>
+		  <a class="cta" style="background:#0b6cf0;margin-left:8px" href="https://www.linkedin.com/in/ahsanrahim786" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="cta" style="background:#0b6cf0;margin-left:8px" href="https://github.com/ahsanrahim786" target="_blank" rel="noopener">GitHub</a>    
         </div>
       </div>
     </header>
@@ -245,7 +251,7 @@
         <!-- AVAILABILITY -->
         <div class="card" style="margin-top:14px">
           <h2>Availability</h2>
-          <p class="muted">Open to Remote / Hybrid roles — Islamabad & Rawalpindi preferred. Available for interviews on short notice.</p>
+          <p class="muted">Open to remote, hybrid, and on-site opportunities. Flexible with time zones and available for interviews on short notice.</p>
         </div>
 
       </aside>
