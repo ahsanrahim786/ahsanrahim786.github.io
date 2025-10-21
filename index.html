@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahsan Rahim — QA Portfolio</title>
+  <meta name="description" content="Senior SQA Engineer — Release & QA Process Owner | Healthcare (HL7, EDI, HIPAA) | CI/CD & Security (GitHub Actions)" />
+
+  <style>
+    :root{
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0b6cf0;
+      --max-width:980px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+      font-size:16px;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+    }
+
+    /* Card */
+    .hero{
+      display:flex;
+      gap:24px;
+      align-items:center;
+      background:var(--card);
+      padding:22px;
+      border-radius:var(--radius);
+      box-shadow:0 4px 14px rgba(8,15,34,0.06);
+    }
+    .avatar{
+      width:96px;
+      height:96px;
+      border-radius:12px;
+      background:#e6eefc;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:28px;
+      flex-shrink:0;
+    }
+    .hero h1{
+      margin:0 0 6px 0;
+      font-size:20px;
+    }
+    .hero p{margin:0;color:var(--muted);font-size:14px}
+
+    /* two-column layout */
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:20px;
+      margin-top:20px;
+    }
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    /* main card style */
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(8,15,34,0.06);
+    }
+    h2{margin:0 0 12px 0;font-size:16px}
+    .muted{color:var(--muted);font-size:14px;margin-bottom:12px}
+
+    /* Skills list */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef2ff;color:#0b4bd8;padding:8px 10px;border-radius:8px;font-size:13px}
+
+    /* Projects */
+    .project{
+      border-left:3px solid #e6eefc;
+      padding:12px 14px;
+      margin-bottom:12px;
+      background:linear-gradient(180deg,#ffffff 0%, #fbfdff 100%);
+      border-radius:8px;
+    }
+    .project h3{margin:0 0 6px 0;font-size:15px}
+    .project .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+    .project ul{margin:0 0 0 18px;color:var(--muted);font-size:14px}
+
+    /* side columns */
+    .side .contact a{display:block;color:var(--accent);text-decoration:none;margin-bottom:6px}
+    .side .kpi{display:flex;gap:8px;flex-wrap:wrap}
+    .kpi .box{background:#f3f9ff;padding:10px;border-radius:8px;font-size:13px;color:#0b4bd8}
+
+    /* CTA */
+    .cta{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:10px;
+    }
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="avatar" aria-hidden="true">AR</div>
+      <div>
+        <h1>Ahsan Rahim — Senior SQA Engineer</h1>
+        <p class="muted">Release & QA Process Owner · Healthcare (HL7, EDI, HIPAA) · API & SQL Testing · CI/CD & Security (GitHub Actions)</p>
+        <div style="margin-top:10px">
+          <a class="cta" href="mailto:ahsanrahim786@gmail.com">Email Me</a>
+          <a class="cta" style="background:#0b6cf0;margin-left:8px" href="https://github.com/ahsanrahim786" target="_blank" rel="noopener">GitHub</a>
+          <a class="cta" style="background:#0b6cf0;margin-left:8px" href="https://www.linkedin.com/in/ahsanrahim786" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- GRID -->
+    <main class="grid">
+
+      <!-- LEFT / MAIN -->
+      <section>
+
+        <!-- ABOUT -->
+        <div class="card" id="about">
+          <h2>About</h2>
+          <p class="muted">
+            I’m a Senior SQA Engineer with 5+ years of experience ensuring high-quality and compliant healthcare software systems.
+            My expertise spans manual and API testing, SQL-based data validation, and security testing (HIPAA, HL7, EDI).
+            I independently manage release processes and CI/CD pipelines using GitHub Actions — from build validation to deployment verification.
+          </p>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="card" id="skills" style="margin-top:14px">
+          <h2>Core Skills & Tools</h2>
+          <div class="skills" style="margin-bottom:10px">
+            <span class="skill">Manual Testing</span>
+            <span class="skill">API Testing (Postman)</span>
+            <span class="skill">SQL & DB Validation</span>
+            <span class="skill">CI/CD (GitHub Actions)</span>
+            <span class="skill">Security Testing (OWASP ZAP)</span>
+            <span class="skill">Playwright</span>
+            <span class="skill">JMeter</span>
+            <span class="skill">Jira</span>
+            <span class="skill">Release Management</span>
+          </div>
+          <p class="small">Tip: Click any project to read a short case study below.</p>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="card" id="projects" style="margin-top:14px">
+          <h2>Selected Projects & Case Studies</h2>
+
+          <!-- Project 1 -->
+          <article class="project">
+            <h3>Healthcare Claim Submission — Data Integrity</h3>
+            <div class="meta">Postman · SQL Server · EDI/HL7 · OWASP ZAP</div>
+            <ul>
+              <li>Identified missing subscriber data in batch claim submissions during regression — prevented major post-release incidents.</li>
+              <li>Designed SQL validation scripts and API test suites to ensure EDI payload correctness across environments.</li>
+              <li>Result: Reduced related production defects by ~30% after improved regression coverage.</li>
+            </ul>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <h3>CI/CD Validation & Release Automation</h3>
+            <div class="meta">GitHub Actions · IIS · Build Validation</div>
+            <ul>
+              <li>Built automated CI checks to validate builds and run sanity tests before deployment.</li>
+              <li>Integrated deployment verification steps to ensure stable releases across QA, UAT, and Prod.</li>
+              <li>Result: Decreased manual deployment time and rollback incidents by ~60%.</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <h3>Performance & Security Testing</h3>
+            <div class="meta">JMeter · OWASP ZAP</div>
+            <ul>
+              <li>Executed load tests to measure system behavior under concurrent users and identified performance bottlenecks.</li>
+              <li>Ran OWASP ZAP scans and collaborated with developers to remediate medium/low vulnerabilities.</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- RIGHT / SIDEBAR -->
+      <aside class="side">
+
+        <!-- CONTACT -->
+        <div class="card contact">
+          <h2>Contact</h2>
+          <div class="muted">
+            Abbottabad District, Khyber Pakhtunkhwa, Pakistan
+          </div>
+          <div style="margin-top:8px">
+            <a href="mailto:ahsanrahim786@gmail.com">ahsanrahim786@gmail.com</a>
+            <a href="tel:+923459553681">+92 345 955 3681</a>
+            <a href="https://www.linkedin.com/in/ahsanrahim786" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/ahsanrahim786" target="_blank" rel="noopener">GitHub</a>
+            <!-- EDIT HERE: add resume link if uploaded to repo -->
+            <!-- <a href="Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a> -->
+          </div>
+        </div>
+
+        <!-- QUICK HIGHLIGHTS -->
+        <div class="card" style="margin-top:14px">
+          <h2>Quick Highlights</h2>
+          <div class="muted">What I bring to the table</div>
+          <div style="margin-top:10px" class="kpi">
+            <div class="box">5+ years QA</div>
+            <div class="box">HL7 / EDI</div>
+            <div class="box">CI/CD Owner</div>
+            <div class="box">API & SQL Testing</div>
+          </div>
+        </div>
+
+        <!-- AVAILABILITY -->
+        <div class="card" style="margin-top:14px">
+          <h2>Availability</h2>
+          <p class="muted">Open to Remote / Hybrid roles — Islamabad & Rawalpindi preferred. Available for interviews on short notice.</p>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div class="small">Built by Ahsan Rahim — Senior SQA Engineer. • <a href="https://github.com/ahsanrahim786" target="_blank" rel="noopener" style="color:var(--accent)">View on GitHub</a></div>
+    </footer>
+
+  </div>
+</body>
+</html>
